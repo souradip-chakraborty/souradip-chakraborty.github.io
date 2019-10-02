@@ -1,13 +1,13 @@
-I am Souradip Chakraborty, currently employed as a Statistical Research Analyst at Walmart Labs, India working in the field of Statistical Machine Learning and advanced Deep Learning. My research interest lies in the area of  Representation Learning,High Dimensional Embedding,Bayesian Inference, Graphical Network and Natural Language Processing. At Walmart Labs I have filed over 7 U.S Patents which aimed at extracting and generating Robust and Dense Customer Embedding using customer's intent, consumption pattern, daily household requirements, wastage pattern etc and generating deep customer insights and subsequent recommendation based on that which improved the previous prevalent accuracy by significant margin.Currently working in the field of Graph Convolution Neural Network to efficiently capture the interaction between the stores in retail and model the Store-Store optimisation strategy efficiently in a Semi-supervised framework.
+I am Souradip Chakraborty, currently employed as a *Statistical Research Analyst* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning. My research interest lies in the area of *Representation Learning,High Dimensional Embedding,Bayesian Inference, Graphical Network and Natural Language Processing*. At Walmart Labs I have filed over **7 U.S Patents** which aimed at extracting and generating Robust and Dense Customer Embedding using customer's intent, consumption pattern, daily household requirements, wastage pattern etc and generating deep customer insights and subsequent recommendation based on that which improved the previous prevalent accuracy by significant margin.Currently working in the field of Graph Convolution Neural Network to efficiently capture the interaction between the stores in retail and model the Store-Store optimisation strategy efficiently in a Semi-supervised framework.
 
-Prior to joining Walmart Labs, I have completed my M.S in Statistics and Machine Learning from Indian Statistical Institute in 2018 as the Batch Topper (*summa cum laude*) with specialisation in Representation Learning. In my Master's Thesis, I have worked in the field of Interpretability of Deep Neural models and exploring the non-convex space using Bayesian optimisation. My dissertation was in the field of developing a new methodology for simultaneous monitoring multiple output characteristics which got published as a Technical Report in Indian Statistical Institute. I have also spent 2 years as a research engineer in the R&D department of Amec Foster Wheeler Pvt.Ltd (headquarters at Houston) in the field of Statistical Quality Control in Oil & Gas field following my bachelor's in Electronics engineering from Jadavpur University (Top 10 institutes in India).
+Prior to joining Walmart Labs, I have completed my **M.S in Statistics and Machine Learning** from [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 as the Batch Topper (**summa cum laude**) with specialisation in Machine Learning and Statistical Theory. In my **Master's Thesis**, I have worked in the field of **Interpretability of Deep Neural models** and exploring the non-convex space using **Bayesian optimisation**. My dissertation was in the field of developing a new methodology for simultaneous monitoring multiple output characteristics which got published as a **Technical Report in Indian Statistical Institute**. I have also spent 2 years as a research engineer in the R&D department of Amec Foster Wheeler Pvt.Ltd (headquarters at Houston) in the field of Statistical Quality Control in Oil & Gas field following my bachelor's in Electronics engineering from Jadavpur University (Top 10 institutes in India).
 
-Currently, I am also a Thesis Supervisor for students at upGrad's online Master's Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU). I was one of the key-note lecturers in the Faculty Development Program for Presidency University,India lecturing more than 50 faculties, professors  in Statistical Learning Theory.  I was selected as the Youngest Technical Speaker for innovation in the very prestigious Data Hack Summit' Analytics Vidhya'2018 as well as Target AI Talks.
+Currently, I am also a Thesis Supervisor for students at [upGrad's](https://www.upgrad.com/) online Master's Program in Data Science as well as Machine Learning with **Liverpool John Moores University (LJMU)**. I was one of the key-note lecturers in the Faculty Development Program for Presidency University,India lecturing more than 50 faculties, professors  in Statistical Learning Theory.  I was selected as the **Youngest Technical Speaker** for innovation in the very prestigious [Data Hack Summit](https://www.analyticsvidhya.com/datahack-summit-2018/speakers/souradip-chakraborty/) **Analytics Vidhya'2018** as well as [Target AI Talks](https://www.eventshigh.com/detail/Bangalore/ff9d298989a5eebaad1968e2f0fa72a6?src=organizer_short_url).
 
 ## Recent News
-* **September 2019** :Invited and one of the members of **Google** *India ML Community Dev Leads Summit*
-* **September 2019**:*US Provisional Patent* got filed in the field of Food Ingredient Share estimation using *Re-parametrisation of order statistic and Gradient-based Optimization*.
-* **September 2018**: Conducted a *Workshop in Statistical Learning Theory and Machine Learning with Python* held at Coimbatore Institute of Technology, Department of Information Technology.
+* **September 2019** :Invited and one of the members of **Google** [India ML Community Dev Leads Summit](https://www.linkedin.com/feed/update/urn:li:activity:6585047394688299008/)
+* **September 2019**:**US Provisional Patent** got filed in the field of Food Ingredient Share estimation using *Re-parametrisation of order statistic and Gradient-based Optimization*.
+* **September 2018**: Conducted a [Workshop in Statistical Learning Theory and Machine Learning with Python]() held at Coimbatore Institute of Technology, Department of Information Technology.
 * **August 2018**: Selected as the *Thesis Supervisor* for students at **upGrad's** online Master's Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
 * **July 2019**:*Key-Note Lecturer* in *Faculty Development Program Presidency University,Bangalore* in the field of Statistical Learning Theory.
 * **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at *Reserach Day AI* by **IBM Reserach Labs and IIM Bangalore**.
@@ -35,46 +35,47 @@ Currently, I am also a Thesis Supervisor for students at upGrad's online Master'
 
 
 ## Patents
-* [US Patent, Walmart Ref.6031US01] -  *SYSTEMS AND METHODS FOR AUTOMATED FOOD INGREDIENT ANALYSIS (Reverse Engineering Food Ingredient Share estimation using Constrained Optimization)* by Gregory  Dixon, Ojaswini Chhabra, **Souradip Chakraborty**, Mallikharjuna Maruthi Vallabhajosyula. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.6031US01]** -  *SYSTEMS AND METHODS FOR AUTOMATED FOOD INGREDIENT ANALYSIS (Reverse Engineering Food Ingredient Share estimation using Constrained Optimization)* by Gregory  Dixon, Ojaswini Chhabra, **Souradip Chakraborty**, Mallikharjuna Maruthi Vallabhajosyula. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5742US01] - *Item-Tag Mismatch Detection and Planogram Management in Retail using Computer Vision * by **Souradip Chakraborty**,Pranay Dugar. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.5742US01]** - **Item-Tag Mismatch Detection and Planogram Management in Retail using Computer Vision** by **Souradip Chakraborty**,Pranay Dugar. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5928US01] - *Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations* by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.5928US01]** - **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations** by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5928US01] - *Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations* by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.5928US01]** - **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations** by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5604US01] - *Systems and Methods for Identifying Negotiable Items (Cost Analytics)* by **Souradip Chakraborty**, Mani Garlapati. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.5604US01]** - **Systems and Methods for Identifying Negotiable Items (Cost Analytics)* by **Souradip Chakraborty**, Mani Garlapati. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5603US01] - *System and Method for Detecting Signature Forgeries* by **Souradip Chakraborty**, Ojaswini Chhabra. Provisionally filed, 2019.
+* **[US Patent, Walmart Ref.5603US01]** - *System and Method for Detecting Signature Forgeries* by **Souradip Chakraborty**, Ojaswini Chhabra. Provisionally filed, 2019.
 
-* [US Patent, Walmart Ref.5118US01] - *System and Method For Automated Electronic Catalogue Management and Image Quality Assessment* by **Souradip Chakraborty**, Rajesh Shreedhar Bhat,Mani Garlapati. Provisionally filed, 2018.
+* **[US Patent, Walmart Ref.5118US01]** - *System and Method For Automated Electronic Catalogue Management and Image Quality Assessment* by **Souradip Chakraborty**, Rajesh Shreedhar Bhat,Mani Garlapati. Provisionally filed, 2018.
 
-* [US Patent, Walmart Ref.5008US01] - *Generating Customized Alerts with Computer Vision and Machine Learning* by **Souradip Chakraborty**,Rajesh Bhat, Mani Garlapati,Lakshmi Praneetha Kommuru. Provisionally filed, 2018.
+* **[US Patent, Walmart Ref.5008US01]** - *Generating Customized Alerts with Computer Vision and Machine Learning* by **Souradip Chakraborty**,Rajesh Bhat, Mani Garlapati,Lakshmi Praneetha Kommuru. Provisionally filed, 2018.
 
-* [US Patent, Walmart Ref.4970US01] - *Architecturally-Distributed Apparatus and Method to Form and Leverage Clustered Content (Customer intent based recommendation system)* by **Souradip Chakraborty**,Sunil Potnuru, Mani Garlapati. Provisionally filed, 2018.
+* **[US Patent, Walmart Ref.4970US01]** - *Architecturally-Distributed Apparatus and Method to Form and Leverage Clustered Content (Customer intent based recommendation system)* by **Souradip Chakraborty**,Sunil Potnuru, Mani Garlapati. Provisionally filed, 2018.
 
 
 ## Publications
-* Saswata Sahoo,**Souradip Chakraborty** *Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type*, submitted for ICLR'2020.
+* Saswata Sahoo,**Souradip Chakraborty** **Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type**, submitted for ICLR'2020.
 
-* Souradip Chakraborty, Subhadip Paul *Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail*,submitted to iKDD'2020.
+* Souradip Chakraborty, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
 
-* Ojaswini Chhabra, **Souradip Chakraborty** *Siamese Triple Ranking Convolution Network in Signature Forgery Detection*, selected at NCMLAI’19,AICAAM’19. (https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf)
+* Ojaswini Chhabra, **Souradip Chakraborty** **Siamese Triple Ranking Convolution Network in Signature Forgery Detection**, selected at NCMLAI’19,AICAAM’19. (https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf)
 
-* Mani Garlapati,**Souradip Chakraborty** *Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning*, selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal. https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf
+* Mani Garlapati,**Souradip Chakraborty** **Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning**, selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal. https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf
 
-* Mani Garlapati, **Souradip Chakraborty** *Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations*, accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
+* Mani Garlapati, **Souradip Chakraborty** **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations**, accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
 https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf
 
-* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee **Souradip Chakraborty**,Amitava Gupta *Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs*, 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015
+* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee **Souradip Chakraborty**,Amitava Gupta **Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs*, 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
 
 
 ## Posters
-* Ojaswini Chhabra & Souradip Chakraborty's Poster on 'Hierarchical Signature Fraud Detection' got selected in *WiML workshop 2019*.
 
-* **Second Prize** for Poster Presentation Judges' Choice Awards in *AI Research Day,IIM Bangalore in association with IBM research Labs'2019*.
+* Ojaswini Chhabra & Souradip Chakraborty's Poster on **'Hierarchical Signature Fraud Detection'** got selected in **WiML workshop 2019**.
 
-* Lakshmi Praneetha Kommuru, Mani Garlapati, **Souradip Chakraborty**,Rajesh Bhat's *Customers consumption based Recommendation system*, accepted for "Poster Session" at the **Grace Hopper Celebration India (GHCI)’18 conference**.
+* **Second Prize** for Poster Presentation Judges' Choice Awards in **AI Research Day,IIM Bangalore in association with IBM research Labs'2019**.
+
+* Lakshmi Praneetha Kommuru, Mani Garlapati, **Souradip Chakraborty**,Rajesh Bhat's **Customers consumption based Recommendation system**, accepted for "Poster Session" at the **Grace Hopper Celebration India (GHCI)’18 conference**.
 
 
 ## Blogs and Research Articles
@@ -86,7 +87,7 @@ https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-R
 * **Souradip Chakraborty** *Dimensionality Reduction in Supervised Framework and Partial Least Square Regression*
 
 
-##Teachings and Invited Talks
+## Teachings and Invited Talks
 
 * [2019] - Thesis Supervisor for students at **upGrad**'s online Master's Program in Data Science as well as *Machine Learning with Liverpool John Moores University (LJMU)* .
 
