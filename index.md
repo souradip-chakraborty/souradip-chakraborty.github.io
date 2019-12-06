@@ -65,14 +65,13 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 * Souradip Chakraborty, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
 
-* Ojaswini Chhabra, **Souradip Chakraborty** **Siamese Triple Ranking Convolution Network in Signature Forgery Detection**, selected at NCMLAI’19,AICAAM’19. (https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf)
+* Ojaswini Chhabra, **Souradip Chakraborty** [Siamese Triple Ranking Convolution Network in Signature Forgery Detection](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf), selected at NCMLAI’19,AICAAM’19.
 
-* Mani Garlapati,**Souradip Chakraborty** **Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning**, selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal. https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf
+* Mani Garlapati,**Souradip Chakraborty** [Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf), selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal.
 
-* Mani Garlapati, **Souradip Chakraborty** **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations**, accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
-https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf
+* Mani Garlapati, **Souradip Chakraborty** [Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf), accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
 
-* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee **Souradip Chakraborty**,Amitava Gupta **Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs*, 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
+* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee **Souradip Chakraborty**,Amitava Gupta [Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs](https://ieeexplore.ieee.org/abstract/document/7124896), 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
 
 
 ## Posters
