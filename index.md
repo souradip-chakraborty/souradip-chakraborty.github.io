@@ -61,17 +61,17 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 
 ## Publications
-* Saswata Sahoo,**Souradip Chakraborty** **Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type**, submitted for ICLR'2020.
+* Saswata Sahoo,*Souradip Chakraborty* **Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type**, submitted for ICLR'2020.
 
-* Souradip Chakraborty, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
+* *Souradip Chakraborty*, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
 
-* Ojaswini Chhabra, **Souradip Chakraborty** [Siamese Triple Ranking Convolution Network in Signature Forgery Detection](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf), selected at NCMLAI’19,AICAAM’19.
+* Ojaswini Chhabra, *Souradip Chakraborty* [Siamese Triple Ranking Convolution Network in Signature Forgery Detection](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf), selected at NCMLAI’19,AICAAM’19.
 
-* Mani Garlapati,**Souradip Chakraborty** [Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf), selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal.
+* Mani Garlapati,*Souradip Chakraborty* [Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf), selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal.
 
-* Mani Garlapati, **Souradip Chakraborty** [Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf), accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
+* Mani Garlapati, *Souradip Chakraborty* [Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf), accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
 
-* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee **Souradip Chakraborty**,Amitava Gupta [Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs](https://ieeexplore.ieee.org/abstract/document/7124896), 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
+* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee *Souradip Chakraborty*,Amitava Gupta [Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs](https://ieeexplore.ieee.org/abstract/document/7124896), 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
 
 
 ## Posters
@@ -85,11 +85,11 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 ## Blogs and Research Articles
 
-* **Souradip Chakraborty**,Amlan Das, Sai Yashwanth *Risks and Caution on applying PCA for Supervised Learning Problems* published on *Towards Data Science,Medium' 2019* (https://towardsdatascience.com/risks-and-caution-on-applying-pca-for-supervised-learning-problems-d7fac7820ec3)
+* **Souradip Chakraborty**,Amlan Das, Sai Yashwanth [*Risks and Caution on applying PCA for Supervised Learning Problems*](https://towardsdatascience.com/risks-and-caution-on-applying-pca-for-supervised-learning-problems-d7fac7820ec3) published on *Towards Data Science,Medium' 2019*
 
-* **Souradip Chakraborty**,Rajesh Shreedhar Bhat *Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?* published on *Towards Data Science,Medium' 2019*.(https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) *Trending in Machine Learning Category*
+* **Souradip Chakraborty**,Rajesh Shreedhar Bhat [*Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?*](https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) published on *Towards Data Science,Medium' 2019*.*Trending in Machine Learning Category*
 
-* **Souradip Chakraborty** *Dimensionality Reduction in Supervised Framework and Partial Least Square Regression*
+* **Souradip Chakraborty** [*Dimensionality Reduction in Supervised Framework and Partial Least Square Regression*](https://medium.com/analytics-vidhya/dimensionality-reduction-in-supervised-framework-and-partial-least-square-regression-b557a4c6c049)
 
 
 ## Teachings and Invited Talks
