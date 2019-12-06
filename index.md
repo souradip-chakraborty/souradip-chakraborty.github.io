@@ -1,16 +1,22 @@
-I am Souradip Chakraborty, currently employed as a *Statistical Research Analyst* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning. My research interest lies in the area of *Representation Learning,High Dimensional Embedding,Bayesian Inference, Graphical Network and Natural Language Processing*. At Walmart Labs I have filed over **7 U.S Patents** which aimed at extracting and generating Robust and Dense Customer Embedding using customer's intent, consumption pattern, daily household requirements, wastage pattern etc and generating deep customer insights and subsequent recommendation based on that which improved the previous prevalent accuracy by significant margin.Currently working in the field of Graph Convolution Neural Network to efficiently capture the interaction between the stores in retail and model the Store-Store optimisation strategy efficiently in a Semi-supervised framework.
+I am Souradip Chakraborty, currently employed as a *Statistical Research Analyst* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning.
 
-Prior to joining Walmart Labs, I have completed my **M.S in Statistics and Machine Learning** from [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 as the Batch Topper (**summa cum laude**) with specialisation in Machine Learning and Statistical Theory. In my **Master's Thesis**, I have worked in the field of **Interpretability of Deep Neural models** and exploring the non-convex space using **Bayesian optimisation**. My dissertation was in the field of developing a new methodology for simultaneous monitoring multiple output characteristics which got published as a **Technical Report in Indian Statistical Institute**. I have also spent 2 years as a research engineer in the R&D department of Amec Foster Wheeler Pvt.Ltd (headquarters at Houston) in the field of Statistical Quality Control in Oil & Gas field following my bachelor's in Electronics engineering from Jadavpur University (Top 10 institutes in India).
+Recognised by **Google** as a *Google Developer Expert in Machine Learning* for my community contributions in Machine Learning research and Data Science and being a thought leader in sharing the most innovative ideas by speaking in various prestigious forums
 
-Currently, I am also a Thesis Supervisor for students at [upGrad's](https://www.upgrad.com/) online Master's Program in Data Science as well as Machine Learning with **Liverpool John Moores University (LJMU)**. I was one of the key-note lecturers in the Faculty Development Program for Presidency University,India lecturing more than 50 faculties, professors  in Statistical Learning Theory.  I was selected as the **Youngest Technical Speaker** for innovation in the very prestigious [Data Hack Summit](https://www.analyticsvidhya.com/datahack-summit-2018/speakers/souradip-chakraborty/) **Analytics Vidhya'2018** as well as [Target AI Talks](https://www.eventshigh.com/detail/Bangalore/ff9d298989a5eebaad1968e2f0fa72a6?src=organizer_short_url).
+My research interest lies in the area of *Representation Learning,High Dimensional Embedding,Bayesian Inference, Graphical Network and Natural Language Processing*. At Walmart Labs I have filed over **7 U.S Patents** which aimed at extracting and generating Robust and Dense Customer Embedding using customer's intent, consumption pattern, daily household requirements, wastage pattern etc and generating deep customer insights and subsequent recommendation based on that which improved the previous prevalent accuracy by significant margin.Currently working in the field of Graph Convolution Neural Network to efficiently capture the interaction between the stores in retail and model the Store-Store optimisation strategy efficiently in a Semi-supervised framework.
+
+Prior to joining Walmart Labs, I have completed my *M.S in Applied Statistics and Machine Learning* from [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 as the Batch Topper (**summa cum laude**) with specialisation in Machine Learning and Statistical Theory. In my *Master's Thesis**, I have worked in the field of *Interpretability of Deep Neural models* and exploring the non-convex space using **Bayesian optimisation**. My dissertation was in the field of developing a new methodology for simultaneous monitoring multiple output characteristics which got published as a *Technical Report in Indian Statistical Institute*. I have also spent 2 years as a research engineer in the R&D department of Amec Foster Wheeler Pvt.Ltd. (headquarters at Houston) in the field of Statistical Quality Control in Oil & Gas field following my bachelor's in Electronics engineering from Jadavpur University (Top 10 institutes in India).
+
 
 ## Recent News
+* **November 2019** : Selected as a [Google Developer Expert in Machine Learning](https://developers.google.com/community/experts) for community contributions in AI and ML.
+* **November 2019** : Selected as the Technical Speaker in India's one of the largest Data Science Conference [DATA HACK SUMMIT'2019](https://www.analyticsvidhya.com/datahack-summit-2019/schedule/hack-session-image-captioning-using-attention-models/) for my talk on Attention models.
+* **September 2019** :Invited and one of the members of **Google** [India ML Community Dev Leads Summit](https://www.linkedin.com/feed/update/urn:li:activity:6585047394688299008/)
 * **September 2019** :Invited and one of the members of **Google** [India ML Community Dev Leads Summit](https://www.linkedin.com/feed/update/urn:li:activity:6585047394688299008/)
 * **September 2019**:**US Provisional Patent** got filed in the field of Food Ingredient Share estimation using *Re-parametrisation of order statistic and Gradient-based Optimization*.
-* **September 2018**: Conducted a [Workshop in Statistical Learning Theory and Machine Learning with Python]() held at Coimbatore Institute of Technology, Department of Information Technology.
-* **August 2018**: Selected as the *Thesis Supervisor* for students at **upGrad's** online Master's Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
-* **July 2019**:*Key-Note Lecturer* in *Faculty Development Program Presidency University,Bangalore* in the field of Statistical Learning Theory.
-* **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at *Reserach Day AI* by **IBM Reserach Labs and IIM Bangalore**.
+* **September 2018**: Conducted a [Workshop in Statistical Learning Theory and Machine Learning with Python](https://www.linkedin.com/posts/souradip-chakraborty_machinelearningalgorithms-machinelearningtraining-activity-6574341911002341376-1c_w) held at Coimbatore Institute of Technology, Department of Information Technology.
+* **August 2018**: Selected as the *Thesis Supervisor* for students at *upGrad's* online Master's Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
+* **July 2019**:*Key-Note Lecturer* in [Faculty Development Program Presidency University,Bangalore](https://www.linkedin.com/posts/souradip-chakraborty_training-learning-science-activity-6562328408712454144-BWDD) in the field of Statistical Learning Theory.
+* **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at [*Reserach Day AI*](https://www.linkedin.com/posts/souradip-chakraborty_secondprize-ibmresearch-iim-activity-6551669133145141248-Ss1q) by **IBM Reserach Labs and IIM Bangalore**.
 
 ## Research Experience
 * **Walmart Labs and Indian Statistical Institute**
@@ -88,16 +94,17 @@ https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-R
 
 
 ## Teachings and Invited Talks
+* [2019] - *Technical Keynote speaker* for the very prestigious *Data Hack Summit’2019 by Analytics Vidhya* on *'Visual Attention and Image Captioning'*
 
-* [2019] - Thesis Supervisor for students at **upGrad**'s online Master's Program in Data Science as well as *Machine Learning with Liverpool John Moores University (LJMU)* .
+* [2019] - Thesis Supervisor for students at *upGrad*'s online Master's Program in Data Science as well as *Machine Learning with Liverpool John Moores University (LJMU)* .
 
-* [2019] - **Key-Note Lecturer** to the Faculty of Presidency University,Bangalore at the **Faculty Development Program** on Statistical Learning Theory and Machine Learning. (https://www.linkedin.com/posts/souradip-chakraborty_training-learning-science-activity-6562328408712454144-BWDD/)
+* [2019] - *Key-Note Lecturer* to the Faculty of Presidency University,Bangalore at the **Faculty Development Program** on Statistical Learning Theory and Machine Learning.
 
-* [2019] - **Key-Note Lecturer** to the students of Computer Science department of Coimbatore Institute of Technology at the **Machine Learning Workshop** on Machine Learning with Python. (https://www.linkedin.com/posts/souradip-chakraborty_machinelearningalgorithms-machinelearningtraining-activity-6574341911002341376-1c_w/)
+* [2019] - *Key-Note Lecturer* to the students of Computer Science department of Coimbatore Institute of Technology at the **Machine Learning Workshop** on Machine Learning with Python.
 
-* [2019] - Technical Keynote speaker for **Target Talks AI Session-3** Bangalore’2019. (https://www.eventshigh.com/detail/Bangalore/ff9d298989a5eebaad1968e2f0fa72a6?src=organizer_short_url)
+* [2019] - Technical Keynote speaker for **Target Talks AI Session-3** Bangalore’2019.
 
-* [2018] - **Youngest Technical Keynote speaker** for the very prestigious **Data Hack Summit’2018 by Analytics Vidhya**. (https://www.analyticsvidhya.com/datahack-summit-2018/speakers/souradip-chakraborty/)
+* [2018] - *Youngest Technical Keynote speaker* for the very prestigious **Data Hack Summit’2018 by Analytics Vidhya**.
 
 
 ## Data Science Competitions
