@@ -8,14 +8,15 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 
 ## Recent News
+* **May 2020** : US Patent filed on  [Signature forgery detection using Triplet Loss and Bayesian Optimization for Retail & Ecomm](https://patents.google.com/patent/US20200167772A1/en)
+* **May 2020** : Published [Research article](https://towardsdatascience.com/bayesian-thinking-estimating-posterior-distribution-for-linear-regression-data-ketchup-2f50a597eb06) on Bayesian Thinking and Gibbs Sampling for estimation of Conditional Posterior Distribution 
+* **April 2020** : US Patent filed on [Computer Vision based Recommendation engine and Generating Customized Alerts  ](http://www.freepatentsonline.com/y2020/0126026.html)
+* **April 2020** : Published [Research article](https://towardsdatascience.com/detection-of-covid-19-presence-from-chest-x-ray-scans-using-cnn-class-activation-maps-c1ab0d7c294b) on Detection of COVID-19 presence from Chest X-ray scans using CNN & Class Activation Maps
+* **March 2020** : US Patent filed on  [Customer Behavourial Analysis and Extraction of Deep Insights using NLP for Ecomm](https://patents.google.com/patent/US20200110787A1/en)
+* **March 2020** : Research collaboration with [Google](https://ai.google/) and ML GDEs on Neural Information Retrieval for enhancing BioMed search.
+* **Feb 2020** : US Patent filed on  [No reference Image Quality Asessment](https://patents.google.com/patent/US20200065955A1/en)
 * **November 2019** : Selected as a [Google Developer Expert in Machine Learning](https://developers.google.com/community/experts) for community contributions in AI and ML.
 * **November 2019** : Selected as the Technical Speaker in India's one of the largest Data Science Conference [DATA HACK SUMMIT'2019](https://www.analyticsvidhya.com/datahack-summit-2019/schedule/hack-session-image-captioning-using-attention-models/) for my talk on Attention models.
-* **September 2019** :Invited and one of the members of **Google** [India ML Community Dev Leads Summit](https://www.linkedin.com/feed/update/urn:li:activity:6585047394688299008/)
-* **September 2019** :Invited and one of the members of **Google** [India ML Community Dev Leads Summit](https://www.linkedin.com/feed/update/urn:li:activity:6585047394688299008/)
-* **September 2019**:**US Provisional Patent** got filed in the field of Food Ingredient Share estimation using *Re-parametrisation of order statistic and Gradient-based Optimization*.
-* **September 2018**: Conducted a [Workshop in Statistical Learning Theory and Machine Learning with Python](https://www.linkedin.com/posts/souradip-chakraborty_machinelearningalgorithms-machinelearningtraining-activity-6574341911002341376-1c_w) held at Coimbatore Institute of Technology, Department of Information Technology.
-* **August 2018**: Selected as the *Thesis Supervisor* for students at *upGrad's* online Master's Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
-* **July 2019**:*Key-Note Lecturer* in [Faculty Development Program Presidency University,Bangalore](https://www.linkedin.com/posts/souradip-chakraborty_training-learning-science-activity-6562328408712454144-BWDD) in the field of Statistical Learning Theory.
 * **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at [*Reserach Day AI*](https://www.linkedin.com/posts/souradip-chakraborty_secondprize-ibmresearch-iim-activity-6551669133145141248-Ss1q) by **IBM Reserach Labs and IIM Bangalore**.
 
 ## Research Experience
@@ -47,8 +48,6 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 * **[US Patent, Walmart Ref.5928US01]** - **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations** by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
 
-* **[US Patent, Walmart Ref.5928US01]** - **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations** by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
-
 * **[US Patent, Walmart Ref.5604US01]** - **Systems and Methods for Identifying Negotiable Items (Cost Analytics)* by **Souradip Chakraborty**, Mani Garlapati. Provisionally filed, 2019.
 
 * **[US Patent, Walmart Ref.5603US01]** - *System and Method for Detecting Signature Forgeries* by **Souradip Chakraborty**, Ojaswini Chhabra. Provisionally filed, 2019.
@@ -61,7 +60,7 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 
 ## Publications
-* Saswata Sahoo,*Souradip Chakraborty* **Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type**, submitted for ICLR'2020.
+* Saswata Sahoo,*Souradip Chakraborty* **[Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type](https://arxiv.org/abs/2005.02817)**, submitted for ICLR'2020.
 
 * *Souradip Chakraborty*, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
 
@@ -71,7 +70,6 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 * Mani Garlapati, *Souradip Chakraborty* [Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf), accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
 
-* Soumya Dasgupta,Kaushik Halder,Shohan Banerjee *Souradip Chakraborty*,Amitava Gupta [Stability anlysis and con- troller synthesis of networked control system (NCS) with arbitrary packet drop-outs](https://ieeexplore.ieee.org/abstract/document/7124896), 2nd International Confer- ence on Electronics and Communication Systems (ICECS)’2015**.
 
 
 ## Posters
