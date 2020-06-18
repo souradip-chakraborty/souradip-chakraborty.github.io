@@ -1,4 +1,4 @@
-I am Souradip Chakraborty, currently employed as a *Statistical Research Analyst* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning.
+I am Souradip Chakraborty, currently employed as a *Research Data Scientist* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning.
 
 Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a **Google Developer Expert in Machine Learning** for my community contributions in Machine Learning research and Data Science and being a thought leader in sharing the most innovative ideas by speaking in various prestigious forums
 
