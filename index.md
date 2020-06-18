@@ -8,6 +8,7 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 
 
 ## Recent News
+* **June 2020** : [Manning Publication](https://www.manning.com/) on Extractive Text Summarisation & Interpretability using Deep Neural Attention based model.[ongoing] 
 * **May 2020** : US Patent filed on  [Signature forgery detection using Triplet Loss and Bayesian Optimization for Retail & Ecomm](https://patents.google.com/patent/US20200167772A1/en)
 * **May 2020** : Published [Research article](https://towardsdatascience.com/bayesian-thinking-estimating-posterior-distribution-for-linear-regression-data-ketchup-2f50a597eb06) on Bayesian Thinking and Gibbs Sampling for estimation of Conditional Posterior Distribution 
 * **April 2020** : US Patent filed on [Computer Vision based Recommendation engine and Generating Customized Alerts  ](http://www.freepatentsonline.com/y2020/0126026.html)
