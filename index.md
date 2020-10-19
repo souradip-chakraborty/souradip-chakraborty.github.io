@@ -1,22 +1,21 @@
-I am Souradip Chakraborty, currently employed as a *Research Data Scientist* at [Walmart Labs](https://www.walmartlabs.com/),India working in the field of Statistical Machine Learning and advanced Deep Learning.
+I am Souradip Chakraborty, currently working as a *Research AI Scientist* at [Walmart Labs](https://www.walmartlabs.com/), India after completing my Masters from the [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 **summa cum laude** and Bachelors in Electronics \& Electrical Engineering from [Jadavpur University](http://www.jaduniv.edu.in/), India in 2014. Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a *[Google Developer Expert in Machine Learning](https://developers.google.com/community/experts/directory/profile/profile-souradip_chakraborty)* for my open-source contributions \& mentorships in the field of AI and ML
 
-Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a **Google Developer Expert in Machine Learning** for my community contributions in Machine Learning research and Data Science and being a thought leader in sharing the most innovative ideas by speaking in various prestigious forums
-
-My research interest lies in the area of *Representation Learning,High Dimensional Embedding,Bayesian Inference, Graphical Network and Natural Language Processing*. At [Walmart Labs](https://www.walmartlabs.com/) I have filed over **7 U.S Patents** which aimed at extracting and generating Robust and Dense Customer Embedding using customer's intent, consumption pattern, daily household requirements, wastage pattern etc and generating deep customer insights and subsequent recommendation based on that which improved the previous prevalent accuracy by significant margin. Currently working in the field of Graph Convolution Neural Network to efficiently capture the interaction between the stores in retail and model the Store-Store optimisation strategy efficiently in a Semi-supervised framework.
-
-Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed my *M.S in Applied Statistics and Machine Learning* from [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 as the Batch Topper (**summa cum laude**) with specialisation in Machine Learning and Statistical Theory. In my *Master's Thesis**, I have worked in the field of *Interpretability of Deep Neural models* and exploring the non-convex space using **Bayesian optimisation**. My dissertation was in the field of developing a new methodology for simultaneous monitoring multiple output characteristics which got published as a *Technical Report in Indian Statistical Institute*. I have also spent 2 years as a research engineer in the R&D department of Amec Foster Wheeler Pvt.Ltd. (headquarters at Houston) in the field of Statistical Quality Control in Oil & Gas field following my bachelor's in Electronics engineering from Jadavpur University (Top 10 institutes in India).
-
+My broader research goals are oriented towards developing Machine \& Deep learning methods that are Robust, Adaptable, Fair and Interpretable leveraging the concepts of Causal reasoning, Causal discovery and Reinforcement learning. Co-authored several [US patents and top-tier publications](https://scholar.google.co.in/citations?user=pvETm1wAAAAJ&hl=en) *(COLING, ICPR, ICDM, SIGIR)* in the field of AI & ML applications in NLP and Computer Vision domain. Selected as the Youngest Technical Speaker for the very prestigious Data Hack Summit’2019 and 2018 by Analytics Vidhya. Currently,I am also a Thesis Supervisor for students at upGrad’s online Master’s Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
 
 ## Recent News
-* **June 2020** : [Manning Publication](https://www.manning.com/) on Extractive Text Summarisation & Interpretability using Deep Neural Attention based model.[ongoing] 
+
+* **October 2020** : *'Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type'* accepted at [ICPR'2020](https://www.icpr2020.it/) as a full paper. 
+* **September 2020** : *'BioMed-BERT: A Pre-trained Biomedical Language Model for QA and IR'* accepted at [COLING'2020](https://coling2020.org/) as a full paper. 
+* **September 2020** : *'G-SimCLR : Self-Supervised Contrastive Learning with Guided Projection via Pseudo Labelling'* accepted at [DLKT Workshop Proceedings, ICDM'2020](https://fuzhenzhuang.github.io/DLKT2020/index.html) as a full paper. 
+* **September 2020** : *'FairMixRep : Self-supervised Robust Representation Learning for Heterogeneous Data with Fairness constraints'* accepted at [DLKT Workshop Proceedings, ICDM'2020](https://sites.google.com/view/2nd-icdmworkshop-dlc2020/home) 
+* **August 2020** : *'Propaganda Fragment Detection using Diversified BERT Architectures based Ensemble Learning'* accepted at [SemEval Workshop, COLING'2020](http://alt.qcri.org/semeval2020/) 
+* **July 2020** : *'Deep Multi-level Fusion Learning Framework for Multi-modal Product Classification'* accepted at [SIGIR-ecom Workshop'2020](https://sigir-ecom.github.io/) 
 * **May 2020** : US Patent filed on  [Signature forgery detection using Triplet Loss and Bayesian Optimization for Retail & Ecomm](https://patents.google.com/patent/US20200167772A1/en)
 * **May 2020** : Published [Research article](https://towardsdatascience.com/bayesian-thinking-estimating-posterior-distribution-for-linear-regression-data-ketchup-2f50a597eb06) on Bayesian Thinking and Gibbs Sampling for estimation of Conditional Posterior Distribution 
 * **April 2020** : US Patent filed on [Computer Vision based Recommendation engine and Generating Customized Alerts  ](http://www.freepatentsonline.com/y2020/0126026.html)
 * **April 2020** : Published [Research article](https://towardsdatascience.com/detection-of-covid-19-presence-from-chest-x-ray-scans-using-cnn-class-activation-maps-c1ab0d7c294b) on Detection of COVID-19 presence from Chest X-ray scans using CNN & Class Activation Maps
 * **March 2020** : US Patent filed on  [Customer Behavourial Analysis and Extraction of Deep Insights using NLP for Ecomm](https://patents.google.com/patent/US20200110787A1/en)
-* **March 2020** : Research collaboration with [Google](https://ai.google/) and ML GDEs on Neural Information Retrieval for enhancing BioMed search.
 * **Feb 2020** : US Patent filed on  [No reference Image Quality Asessment](https://patents.google.com/patent/US20200065955A1/en)
-* **November 2019** : Selected as a [Google Developer Expert in Machine Learning](https://developers.google.com/community/experts) for community contributions in AI and ML.
 * **November 2019** : Selected as the Technical Speaker in India's one of the largest Data Science Conference [DATA HACK SUMMIT'2019](https://www.analyticsvidhya.com/datahack-summit-2019/schedule/hack-session-image-captioning-using-attention-models/) for my talk on Attention models.
 * **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at [*Reserach Day AI*](https://www.linkedin.com/posts/souradip-chakraborty_secondprize-ibmresearch-iim-activity-6551669133145141248-Ss1q) by **IBM Reserach Labs and IIM Bangalore**.
 
@@ -29,7 +28,7 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 * **Walmart Labs and Indian Statistical Institute**
 * Data Science Team *Feb 2018 – July 2018*
 * Advisor: Dr. Boby John & Mallikharjuna Mv
-* **Interpretability of Black-box Models**  - Worked in the field of finding the most appropriate classifier and classifier conditional hyperparameters given a dataset using Meta-Learning and Bayesian Optimisation incorporating the dependencies and relationship among the hyperparameters in the non-convex space and was able to implement it and show explicit relations among the hyperparameters for regularised linear models(Ridge regression) .
+* **Interpretability of Black-box Models**  - Worked in the field of finding the most appropriate classifier and classifier conditional hyperparameters given a dataset using Meta-Learning and Gaussian process incorporating the dependencies and relationship among the hyperparameters in the non-convex space and was able to implement it and show explicit relations among the hyperparameters for regularised linear models(Ridge regression) .
 
 * **Indian Statistical Institute Bangalore**
 * Technical Report, Statistical Quality Control unit *Nov 2017 – Jan 2018*
@@ -39,37 +38,38 @@ Prior to joining [Walmart Labs](https://www.walmartlabs.com/), I have completed 
 * **Australia and New Zealand Banking Group**
 * Data Science Dept. *May 2017 – July 2017*
 * Advisor: Dr. Krishnendu Chandra
-* **State of cycle analysis and Causal Inference** - Developed a *Dynamic Index for dating Business cycles using Hodrick–Prescott filter and Principal component analysis* in the context of Causal inference in Credit Risk Management for Mortgage portfolio in Australian economy and cross-validated the same in US economy.
-
-
-## Patents
-* **[US Patent, Walmart Ref.6031US01]** -  *SYSTEMS AND METHODS FOR AUTOMATED FOOD INGREDIENT ANALYSIS (Reverse Engineering Food Ingredient Share estimation using Constrained Optimization)* by Gregory  Dixon, Ojaswini Chhabra, **Souradip Chakraborty**, Mallikharjuna Maruthi Vallabhajosyula. Provisionally filed, 2019.
-
-* **[US Patent, Walmart Ref.5742US01]** - **Item-Tag Mismatch Detection and Planogram Management in Retail using Computer Vision** by **Souradip Chakraborty**,Pranay Dugar. Provisionally filed, 2019.
-
-* **[US Patent, Walmart Ref.5928US01]** - **Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations** by **Souradip Chakraborty**,Mani Garlapati. Provisionally filed, 2019.
-
-* **[US Patent, Walmart Ref.5604US01]** - **Systems and Methods for Identifying Negotiable Items (Cost Analytics)* by **Souradip Chakraborty**, Mani Garlapati. Provisionally filed, 2019.
-
-* **[US Patent, Walmart Ref.5603US01]** - *System and Method for Detecting Signature Forgeries* by **Souradip Chakraborty**, Ojaswini Chhabra. Provisionally filed, 2019.
-
-* **[US Patent, Walmart Ref.5118US01]** - *System and Method For Automated Electronic Catalogue Management and Image Quality Assessment* by **Souradip Chakraborty**, Rajesh Shreedhar Bhat,Mani Garlapati. Provisionally filed, 2018.
-
-* **[US Patent, Walmart Ref.5008US01]** - *Generating Customized Alerts with Computer Vision and Machine Learning* by **Souradip Chakraborty**,Rajesh Bhat, Mani Garlapati,Lakshmi Praneetha Kommuru. Provisionally filed, 2018.
-
-* **[US Patent, Walmart Ref.4970US01]** - *Architecturally-Distributed Apparatus and Method to Form and Leverage Clustered Content (Customer intent based recommendation system)* by **Souradip Chakraborty**,Sunil Potnuru, Mani Garlapati. Provisionally filed, 2018.
-
+* **State of cycle analysis and Causal Inference** - 
 
 ## Publications
-* Saswata Sahoo,*Souradip Chakraborty* **[Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type](https://arxiv.org/abs/2005.02817)**, submitted for ICLR'2020.
+* Saswata Sahoo,*Souradip Chakraborty* **[Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type](https://arxiv.org/abs/2005.02817)**, accepted at *ICPR'2020*
 
-* *Souradip Chakraborty*, Subhadip Paul **Semi-Supervised Spectral Graph Convolution based Store Temporal Embedding and Store Clustering in Retail**,submitted to iKDD'2020.
+* *Souradip Chakraborty*, Ekaba Bisong, Shweta Bhatt, Thomas Wagner, Riley Elliott and Francesco Mosconi **[BioMedBERT: A Pre-trained Biomedical Language Model for QA and IR]**, accepted at *COLING'2020*
+
+* *Souradip Chakraborty*, Sayak Paul, Aritra Roy Gosthipaty **[G-SimCLR : Self-Supervised Contrastive Learning with Guided Projection via Pseudo Labelling](https://arxiv.org/abs/2009.12007)**, accepted at the *DLKT Workshop proceedings of IEEE ICDM'2020*
+
+* *Souradip Chakraborty*, Ekansh Verma, Saswata Sahoo, Jyotishka Datta **[FairMixRep : Self-supervised Robust Representation Learning for Heterogeneous Data with Fairness constraints](https://arxiv.org/abs/2010.03228)**, accepted at the *DLC Workshop proceedings of IEEE ICDM'2020*
+
+* Ekansh Verma,*Souradip Chakraborty*, Vinodh Kumar **[Propaganda Fragment Detection using Diversified BERT Architectures based Ensemble Learning](https://propaganda.qcri.org/papers/310_Paper.pdf)**, accepted at the *SemEval Workshop COLING'2020*
+
+* Ekansh Verma, Vinodh Kumar, *Souradip Chakraborty* **[Deep Multi-level Fusion Learning Framework for Multi-modal Product Classification](https://sigir-ecom.github.io/ecom20DCPapers/SIGIR_eCom20_DC_paper_8.pdf)**, accepted at the *SIGIR eCom'20 Workshop Proceedings*
 
 * Ojaswini Chhabra, *Souradip Chakraborty* [Siamese Triple Ranking Convolution Network in Signature Forgery Detection](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Siamese-Triple-Ranking-Convolution-Network.pdf), selected at NCMLAI’19,AICAAM’19.
 
-* Mani Garlapati,*Souradip Chakraborty* [Automated Catalog Management and Image Quality Assessment using Convolution Neural Networks and Transfer Learning](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Automated-Catalog-Management.pdf), selected at **NCMLAI’19, AICAAM’19**, selected and submitted to Pertanika journal.
 
-* Mani Garlapati, *Souradip Chakraborty* [Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://alliance.edu.in/aicaam-conference-proceedings/Papers/Retail-Based-Cost-Reverse-Engineering.pdf), accepted for NCMLAI’19, AICAAM’19, selected and submitted to Pertanika journal.
+
+
+## Patents
+* **[US Patent, Walmart Ref.6031US01]** -  *Reverse Engineering Food Ingredient Share estimation using Constrained Optimization* by Gregory  Dixon, Ojaswini Chhabra, **Souradip Chakraborty**, Mallikharjuna Maruthi Vallabhajosyula. Provisionally filed, 2019.
+
+* **[US Patent, Walmart Ref.5928US01]** - *[Retail Based Cost Reverse Engineering and Cost comparison within Item Similarity Clusters for Cost Negotiations](https://patents.google.com/patent/US20200242651A1/en)* by **Souradip Chakraborty**, Mani Garlapati.
+
+* **[US Patent, Walmart Ref.5603US01]** - *[System and Method for Detecting Signature Forgeries](https://patents.google.com/patent/US20200167772A1/en)* by **Souradip Chakraborty**, Ojaswini Chhabra. 
+
+* **[US Patent, Walmart Ref.5118US01]** - *S[ystem and Method For Automated Electronic Catalogue Management and Image Quality Assessment](https://patents.google.com/patent/US20200065955A1/en)* by **Souradip Chakraborty**, Rajesh Shreedhar Bhat, Mani Garlapati. 
+
+* **[US Patent, Walmart Ref.5008US01]** - *[Generating Customized Alerts with Computer Vision and Machine Learning](https://www.freepatentsonline.com/y2020/0126026.html)* by **Souradip Chakraborty**, Rajesh Bhat, Mani Garlapati, Lakshmi Praneetha Kommuru. 
+
+* **[US Patent, Walmart Ref.4970US01]** - *[Architecturally-Distributed Apparatus and Method to Form and Leverage Clustered Content](https://patents.google.com/patent/US20200110787A1/en)* by **Souradip Chakraborty**,Sunil Potnuru, Mani Garlapati. 
 
 
 
