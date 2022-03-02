@@ -1,8 +1,16 @@
-I am Souradip Chakraborty, currently working as a *Research AI Scientist* at [Walmart Labs](https://www.walmartlabs.com/), India after completing my Masters from the [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 **summa cum laude** and Bachelors in Electronics \& Electrical Engineering from [Jadavpur University](http://www.jaduniv.edu.in/), India in 2014. Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a *[Google Developer Expert in Machine Learning](https://developers.google.com/community/experts/directory/profile/profile-souradip_chakraborty)* for my open-source contributions \& mentorships in the field of AI and ML
+I am Souradip Chakraborty, currently a 1st year [Computer Science](https://www.cs.umd.edu/) PhD student at the [University of Maryland, College Park](https://www.cs.umd.edu/) from **Fall 2021.** My current research focusses on the Theoritical and Practical aspects of Deep Reinforcement Learning especially from a Representation viewpoint with a special emphasis on learning State Abstraction. My research also explores **Sample-efficient** and **Safe Model-based reinforcement learning** under uncertainty, noisy-settings and Sparse rewards scenarios. I am also extremely interested in designing **Sample-efficient High Dimensional Gaussian Processes** and believe that can develop the foundations of ture **Self-Supervised Representation**
 
-My broader research goals are oriented towards developing Machine \& Deep learning methods that are Robust, Adaptable, Fair and Interpretable leveraging the concepts of Causal reasoning, Causal discovery and Reinforcement learning. Co-authored several [US patents and top-tier publications](https://scholar.google.co.in/citations?user=pvETm1wAAAAJ&hl=en) *(COLING, ICPR, ICDM, SIGIR)* in the field of AI & ML applications in NLP and Computer Vision domain. Selected as the Youngest Technical Speaker for the very prestigious Data Hack Summit’2019 and 2018 by Analytics Vidhya. Currently,I am also a Thesis Supervisor for students at upGrad’s online Master’s Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
+In the past I have worked as a *Research AI Scientist* at [Walmart Labs](https://www.walmartlabs.com/), India after completing my Masters from the [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 **summa cum laude** and Bachelors in Electronics \& Electrical Engineering from [Jadavpur University](http://www.jaduniv.edu.in/), India in 2014. Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a *[Google Developer Expert in Machine Learning](https://developers.google.com/community/experts/directory/profile/profile-souradip_chakraborty)* for my open-source contributions \& mentorships in the field of AI and ML. 
+
+Co-authored several [US patents and top-tier publications](https://scholar.google.co.in/citations?user=pvETm1wAAAAJ&hl=en) *(COLING, ICPR, ICDM, SIGIR)* in the field of AI & ML applications in NLP and Computer Vision domain. Selected as the Youngest Technical Speaker for the very prestigious Data Hack Summit’2019 and 2018 by Analytics Vidhya. Currently,I am also a Thesis Supervisor for students at upGrad’s online Master’s Program in Data Science as well as Machine Learning with Liverpool John Moores University (LJMU)
+
 
 ## Recent News
+
+
+* **Feb 2022** : *'On the Hidden Biases of Policy Mirror Ascent in Continuous Action Spaces Deep Reinforcement Learning'* [arxiv](https://arxiv.org/abs/2201.12332)(Under Submissiom) 
+
+* **August 2021** : Excited to start my PhD in Computer Science at the (University of Maryland, College Park)[] from Fall 2021, focussing on the theoritical and practical foundations of Deep Reinforcement Learning and Representation Learning.
 
 * **October 2020** : *'Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type'* accepted at [ICPR'2020](https://www.icpr2020.it/) as a full paper. 
 * **September 2020** : *'BioMed-BERT: A Pre-trained Biomedical Language Model for QA and IR'* accepted at [COLING'2020](https://coling2020.org/) as a full paper. 
@@ -13,15 +21,12 @@ My broader research goals are oriented towards developing Machine \& Deep learni
 * **May 2020** : US Patent filed on  [Signature forgery detection using Triplet Loss and Bayesian Optimization for Retail & Ecomm](https://patents.google.com/patent/US20200167772A1/en)
 * **May 2020** : Published [Research article](https://towardsdatascience.com/bayesian-thinking-estimating-posterior-distribution-for-linear-regression-data-ketchup-2f50a597eb06) on Bayesian Thinking and Gibbs Sampling for estimation of Conditional Posterior Distribution 
 * **April 2020** : US Patent filed on [Computer Vision based Recommendation engine and Generating Customized Alerts  ](http://www.freepatentsonline.com/y2020/0126026.html)
-* **April 2020** : Published [Research article](https://towardsdatascience.com/detection-of-covid-19-presence-from-chest-x-ray-scans-using-cnn-class-activation-maps-c1ab0d7c294b) on Detection of COVID-19 presence from Chest X-ray scans using CNN & Class Activation Maps
-* **March 2020** : US Patent filed on  [Customer Behavourial Analysis and Extraction of Deep Insights using NLP for Ecomm](https://patents.google.com/patent/US20200110787A1/en)
 * **Feb 2020** : US Patent filed on  [No reference Image Quality Asessment](https://patents.google.com/patent/US20200065955A1/en)
-* **November 2019** : Selected as the Technical Speaker in India's one of the largest Data Science Conference [DATA HACK SUMMIT'2019](https://www.analyticsvidhya.com/datahack-summit-2019/schedule/hack-session-image-captioning-using-attention-models/) for my talk on Attention models.
 * **June 2019**: **2nd Prize Judges Choice Award** for Poster Presentation at [*Reserach Day AI*](https://www.linkedin.com/posts/souradip-chakraborty_secondprize-ibmresearch-iim-activity-6551669133145141248-Ss1q) by **IBM Reserach Labs and IIM Bangalore**.
 
 ## Research Experience
-* **Walmart Labs and Indian Statistical Institute**
-* Data Science Team *Present(2019)*
+* **Walmart Labs**
+* Machin *Present(2019)*
 * Advisor: Dr.Saswata Sahoo
 * **Mixed Space Representation and Graphical Embedding**  - We explicitly model the probabilistic dependence structure among the mixed type of variables by an undirected Graph and Spectral decomposition of the graph Laplacian matrix provide the desired feature transformation.
 
@@ -41,9 +46,12 @@ My broader research goals are oriented towards developing Machine \& Deep learni
 * **State of cycle analysis and Causal Inference** - 
 
 ## Publications
-* Saswata Sahoo,*Souradip Chakraborty* **[Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type](https://arxiv.org/abs/2005.02817)**, accepted at *ICPR'2020*
+
+* Amrit Singh Bedi, *Souradip Chakraborty*, Anjaly Parayil, Brian Sadler, Pratap Tokekar, Alec Koppel  **[On the Hidden Biases of Policy Mirror Ascent in Continuous Action Spaces](https://arxiv.org/abs/2201.12332)**, accepted at *ICPR'2020*
 
 * *Souradip Chakraborty*, Ekaba Bisong, Shweta Bhatt, Thomas Wagner, Riley Elliott and Francesco Mosconi **[BioMedBERT: A Pre-trained Biomedical Language Model for QA and IR]**, accepted at *COLING'2020*
+
+* Saswata Sahoo,*Souradip Chakraborty* **[Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type](https://arxiv.org/abs/2005.02817)**, accepted at *ICPR'2020*
 
 * *Souradip Chakraborty*, Sayak Paul, Aritra Roy Gosthipaty **[G-SimCLR : Self-Supervised Contrastive Learning with Guided Projection via Pseudo Labelling](https://arxiv.org/abs/2009.12007)**, accepted at the *DLKT Workshop proceedings of IEEE ICDM'2020*
 
