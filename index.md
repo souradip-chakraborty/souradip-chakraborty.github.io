@@ -1,4 +1,4 @@
-I am Souradip Chakraborty, currently a 1st year [Computer Science](https://www.cs.umd.edu/) PhD student at the [University of Maryland, College Park](https://www.cs.umd.edu/) from **Fall 2021.** My current research focusses on the Theoritical and Practical aspects of Deep Reinforcement Learning especially from a Representation viewpoint with a special emphasis on learning State Abstraction. My research also explores **Sample-efficient** and **Safe Model-based reinforcement learning** under uncertainty, noisy-settings and Sparse rewards scenarios. I am also extremely interested in designing **Sample-efficient High Dimensional Gaussian Processes** and believe that can develop the foundations of ture **Self-Supervised Representation**
+I am Souradip Chakraborty, currently a 1st year [Computer Science](https://www.cs.umd.edu/) *PhD student* at the **[University of Maryland, College Park]**(https://www.cs.umd.edu/) from *Fall 2021*. My current research focusses on the Theoritical and Practical aspects of **Deep Reinforcement Learning** especially from a Representation learning viewpoint with a special emphasis on learning **State Abstraction**. My research also explores **Sample-efficient** and **Safe Model-based reinforcement learning** under Uncertainty, noisy-settings and Sparse rewards scenarios. I am also extremely interested in designing **Sample-efficient High Dimensional Gaussian Processes** and believe that can pave the pathway for **Self-Supervised Representation Learning**
 
 In the past I have worked as a *Research AI Scientist* at [Walmart Labs](https://www.walmartlabs.com/), India after completing my Masters from the [Indian Statistical Institute](https://www.isibang.ac.in/) in 2018 **summa cum laude** and Bachelors in Electronics \& Electrical Engineering from [Jadavpur University](http://www.jaduniv.edu.in/), India in 2014. Recognised by [Google](https://en.wikipedia.org/wiki/Google) as a *[Google Developer Expert in Machine Learning](https://developers.google.com/community/experts/directory/profile/profile-souradip_chakraborty)* for my open-source contributions \& mentorships in the field of AI and ML. 
 
@@ -7,11 +7,9 @@ Co-authored several [US patents and top-tier publications](https://scholar.googl
 
 ## Recent News
 
-
+* **Feb 2022** Our blog [*Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?*](https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) received more than **55k views** on [Towards Data Science](https://medium.com/)
 * **Feb 2022** : *'On the Hidden Biases of Policy Mirror Ascent in Continuous Action Spaces Deep Reinforcement Learning'* [arxiv](https://arxiv.org/abs/2201.12332)(Under Submissiom) 
-
 * **August 2021** : Excited to start my PhD in Computer Science at the (University of Maryland, College Park)[] from Fall 2021, focussing on the theoritical and practical foundations of Deep Reinforcement Learning and Representation Learning.
-
 * **October 2020** : *'Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type'* accepted at [ICPR'2020](https://www.icpr2020.it/) as a full paper. 
 * **September 2020** : *'BioMed-BERT: A Pre-trained Biomedical Language Model for QA and IR'* accepted at [COLING'2020](https://coling2020.org/) as a full paper. 
 * **September 2020** : *'G-SimCLR : Self-Supervised Contrastive Learning with Guided Projection via Pseudo Labelling'* accepted at [DLKT Workshop Proceedings, ICDM'2020](https://fuzhenzhuang.github.io/DLKT2020/index.html) as a full paper. 
@@ -47,7 +45,7 @@ Co-authored several [US patents and top-tier publications](https://scholar.googl
 
 ## Publications
 
-* Amrit Singh Bedi, *Souradip Chakraborty*, Anjaly Parayil, Brian Sadler, Pratap Tokekar, Alec Koppel  **[On the Hidden Biases of Policy Mirror Ascent in Continuous Action Spaces](https://arxiv.org/abs/2201.12332)**, accepted at *ICPR'2020*
+* Amrit Singh Bedi, *Souradip Chakraborty*, Anjaly Parayil, Brian Sadler, Pratap Tokekar, Alec Koppel  **[On the Hidden Biases of Policy Mirror Ascent in Continuous Action Spaces](https://arxiv.org/abs/2201.12332)**, under submission.
 
 * *Souradip Chakraborty*, Ekaba Bisong, Shweta Bhatt, Thomas Wagner, Riley Elliott and Francesco Mosconi **[BioMedBERT: A Pre-trained Biomedical Language Model for QA and IR]**, accepted at *COLING'2020*
 
@@ -80,6 +78,15 @@ Co-authored several [US patents and top-tier publications](https://scholar.googl
 * **[US Patent, Walmart Ref.4970US01]** - *[Architecturally-Distributed Apparatus and Method to Form and Leverage Clustered Content](https://patents.google.com/patent/US20200110787A1/en)* by **Souradip Chakraborty**,Sunil Potnuru, Mani Garlapati. 
 
 
+## Blogs and Research Articles
+
+* **Souradip Chakraborty**,Amlan Das, Sai Yashwanth [*Risks and Caution on applying PCA for Supervised Learning Problems*](https://towardsdatascience.com/risks-and-caution-on-applying-pca-for-supervised-learning-problems-d7fac7820ec3) published on *Towards Data Science,Medium' 2019*
+
+* **Souradip Chakraborty**,Rajesh Shreedhar Bhat [*Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?*](https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) published on *Towards Data Science,Medium' 2019*.*Trending in Machine Learning Category*
+
+* **Souradip Chakraborty** [*Dimensionality Reduction in Supervised Framework and Partial Least Square Regression*](https://medium.com/analytics-vidhya/dimensionality-reduction-in-supervised-framework-and-partial-least-square-regression-b557a4c6c049)
+
+
 
 ## Posters
 
@@ -89,14 +96,6 @@ Co-authored several [US patents and top-tier publications](https://scholar.googl
 
 * Lakshmi Praneetha Kommuru, Mani Garlapati, **Souradip Chakraborty**,Rajesh Bhat's **Customers consumption based Recommendation system**, accepted for "Poster Session" at the **Grace Hopper Celebration India (GHCI)’18 conference**.
 
-
-## Blogs and Research Articles
-
-* **Souradip Chakraborty**,Amlan Das, Sai Yashwanth [*Risks and Caution on applying PCA for Supervised Learning Problems*](https://towardsdatascience.com/risks-and-caution-on-applying-pca-for-supervised-learning-problems-d7fac7820ec3) published on *Towards Data Science,Medium' 2019*
-
-* **Souradip Chakraborty**,Rajesh Shreedhar Bhat [*Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?*](https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) published on *Towards Data Science,Medium' 2019*.*Trending in Machine Learning Category*
-
-* **Souradip Chakraborty** [*Dimensionality Reduction in Supervised Framework and Partial Least Square Regression*](https://medium.com/analytics-vidhya/dimensionality-reduction-in-supervised-framework-and-partial-least-square-regression-b557a4c6c049)
 
 
 ## Teachings and Invited Talks
