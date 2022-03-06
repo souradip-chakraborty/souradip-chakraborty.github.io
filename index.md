@@ -9,7 +9,8 @@ Co-authored several [US patents and top-tier publications](https://scholar.googl
 
 * **Feb 2022** Our blog [*Why not Mean Squared Error(MSE) as a loss function for Logistic Regression?*](https://towardsdatascience.com/why-not-mse-as-a-loss-function-for-logistic-regression-589816b5e03c) received more than **55k views** on [Towards Data Science](https://medium.com/)
 * **Feb 2022** : *'On the Hidden Biases of **Policy Mirror Ascent** in Continuous Action Spaces Deep Reinforcement Learning'* [arxiv](https://arxiv.org/abs/2201.12332)
-* **August 2021** : Excited to start my *PhD in Computer Science* at the (University of Maryland, College Park)[https://www.cs.umd.edu/] from Fall 2021, focussing on Deep Reinforcement Learning and Representation Learning.
+* **Oct 2021** : *[Uncertainty-aware Labelled Augmentations for High Dimensional Latent Space Bayesian Optimization](https://openreview.net/pdf?id=C7pY5Wjwk0d)* got accepted at got accepted at the [NeurIPS2021](https://nips.cc/)  workshop on **𝗗𝗲𝗲𝗽 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝘃𝗲 𝗠𝗼𝗱𝗲𝗹𝘀 𝗮𝗻𝗱 𝗗𝗼𝘄𝗻𝘀𝘁𝗿𝗲𝗮𝗺 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀**
+* **August 2021** : Excited to start my *PhD in Computer Science* at the [University of Maryland, College Park](https://www.cs.umd.edu/) from Fall 2021, focussing on Deep Reinforcement Learning and Representation Learning.
 * **October 2020** : *'Graph Spectral Feature Learning for Mixed Data of Categorical and Numerical Type'* accepted at [ICPR'2020](https://www.icpr2020.it/) as a full paper. 
 * **September 2020** : *'BioMed-BERT: A Pre-trained Biomedical Language Model for QA and IR'* accepted at [COLING'2020](https://coling2020.org/) as a full paper. 
 * **September 2020** : *'G-SimCLR : Self-Supervised Contrastive Learning with Guided Projection via Pseudo Labelling'* accepted at [DLKT Workshop Proceedings, ICDM'2020](https://fuzhenzhuang.github.io/DLKT2020/index.html) as a full paper. 
