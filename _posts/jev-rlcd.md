@@ -1,0 +1,463 @@
+
+# Notes on Jev:<br>Is Jev secretly a Value function?
+
+Jev is **TypeSafe’s model for fast, structured decisions**. When used for action selection, its Choice interface takes the task context and candidate actions and returns a probability distribution over them. It can therefore serve as a policy component in an agent, with the surrounding software selecting and executing the next action.[^primer]
+
+
+These are our notes on understanding the training mechanism that goes behing Jev **and the unique challenges to it**. 
+
+We start with a public browser integration, examine why calibration matters so much in the context of Jev, and consider how System 2 can help with uncertain System 1 decisions. We end with a very interesting connection to a familiar quantity from reinforcement learning.
+
+> Note: The discussion explain established ideas. They do not propose a new method or claim to reconstruct Jev’s training procedure.
+
+
+## 1. What Jev does in a browser
+
+Consider the task demonstrated in the public `jev-ultrafast` implementation:
+
+> Find one-way flights from Zürich to London on September 20, 2026.
+
+The browser runtime first turns the page into a structured list of visible controls. A simplified observation might look like this:
+
+```text
+[12] button    Change ticket type · Round trip
+[15] combobox  Where from?        · empty
+[16] combobox  Where to?          · empty
+[18] textbox   Departure          · empty
+[19] button    Search
+```
+
+Jev selects an operation and, when needed, a compatible target:
+
+```text
+CLICK → [12] Change ticket type
+```
+
+The runtime executes the action, observes the changed page, and asks Jev again. For text entry, the responsibilities are divided: Jev chooses the field, a separate text helper generates a value such as `"Zurich"`, and the executor inserts it.[^jevrepo]
+
+![image](https://hackmd.io/_uploads/rJLu2ZiqGe.png)
+
+*Figure 1. The browser loop. Jev chooses the structured action; the surrounding software supplies any required text, executes the action, and returns the next observation.*
+
+The published Google Flights recording reports **7.073 seconds** from the first prediction after initial page observation to the accepted `DONE` decision. It contains ten browser interactions, one explicit `WAIT`, a final `DONE`, and two text-helper calls. Setup, initial navigation, and independent post-run verification fall outside that interval. This is a measurement of one task, not a general reliability benchmark.[^performance]
+
+<details>
+<summary>The recorded trajectory, step by step</summary>
+
+The executed trajectory is approximately:
+
+| Step | Structured decision | Text generation? |
+|---:|---|---|
+| 1 | `CLICK → trip-type selector` | No |
+| 2 | `CLICK → One way` | No |
+| 3 | `TYPE_TEXT → origin field` | Yes: `"Zurich"` |
+| 4 | `CLICK → Zürich autocomplete result` | No |
+| 5 | `TYPE_TEXT → destination field` | Yes: `"London"` |
+| 6 | `CLICK → London autocomplete result` | No |
+| 7 | `CLICK → departure-date field` | No |
+| 8 | `CLICK → September 20` | No |
+| 9 | `CLICK → Done` | No |
+| 10 | `CLICK → Search` | No |
+| 11 | `WAIT` | No |
+| 12 | `DONE` | No |
+
+The recording contains 17 Jev requests because predictions and executed actions do not correspond one-to-one: page changes can cause predictions to be discarded or retried.[^performance]
+
+</details>
+
+
+
+**Sequential Decision making problem** : An important point is that Jev’s action predictions here are part of a sequential decision-making problem. The available actions change with the page, and each choice affects what comes next and eventually the final success. Selecting the wrong airport changes the results the agent will later compare. Stopping before results appear leaves the task incomplete.
+
+This makes browser interaction, like many agentic tasks, inherently sequential, bringing its own challenges. We’ll return to these and the full mathematical description in the last section.
+
+For now, let’s understand things through a one-step version. We can think of Jev as a policy component that, given the task context and a set of available actions, ranks the actions and proposes its preferred choice. But choosing an action is only part of what the surrounding software needs. To decide whether to execute it immediately or ask for further reasoning, the software also needs a sense of how reliable that proposal is. This brings **us to calibration and why thats so important for Jev**
+
+
+## 2. What is Calibration and Why Does It Matter for Jev?
+
+Before diving into why calibration matters, let’s briefly understand the idea. Suppose Jev proposes action A in two situations: one where the evidence is clear, and another where a relevant constraint is hard to interpret. The proposed action is the same, but the software may want to act immediately in the first case and seek further reasoning in the second. For probabilities to help with this choice, they need a meaningful interpretation.
+
+**Calibration means that reported probabilities agree with observed correctness rates.** Among decisions assigned a probability near 0.80, approximately 80% should be correct.[^calibration] Let $q$ be the reported probability that a proposed action is correct, and $C\in\{0,1\}$ indicate its correctness. Perfect calibration under the evaluation distribution requires
+
+$$
+\mathbb E[C\mid q=c]=c.
+$$
+
+Here, “correct” means satisfying the current decision’s criterion, such as choosing the cheapest eligible flight; it does not imply that every later browser interaction will succeed.
+
+For Jev, calibrated probabilities could help the surrounding software decide how much scrutiny a proposal needs. TypeSafe describes calibration as an aim of its RLCD training approach.[^primer] One distinction to keep in mind: our $q$ represents an estimate of correctness, while TypeSafe’s separate `confidence` field is derived from the shape of its output distribution. A `confidence` value of 0.80 does not, by itself, mean 80% correctness.[^confidence]
+
+A model can be good at choosing actions without reporting reliable probabilities. Let’s see why this distinction matters.
+
+
+## 3. Why Calibration Matters for Jev: Knowing When to Switch?
+
+Calibration matters whenever we rely on a model’s probabilities. However, in a system combining Jev (System 1) with a reasoning model (System 2), it has a particularly useful role: *helping decide when to trust the fast prediction and when to spend more effort*.
+
+
+Jev’s proposed action is one decision; whether to execute it immediately is another. Here, System 1 is Jev’s fast decision path, while System 2 can work through constraints, inspect additional evidence, or repair a plan. The router, implemented in the surrounding harness, chooses between them.
+
+Suppose evaluation shows that System 2 improves difficult decisions enough to justify its additional cost. An illustrative router could execute proposals with estimated correctness $q\geq0.90$ and send the others for further examination:
+
+| Fast proposal | Estimated correctness $q$ | Router’s decision |
+|---|---:|---|
+| A, with clear evidence | 0.99 | Execute A |
+| A, with unresolved ambiguity | 0.60 | Ask System 2 to examine the decision |
+
+The proposed action is the same, but its estimated reliability changes *which policy handles the decision*. 
+**Overconfidence** can make the router skip useful reasoning; underconfidence can trigger unnecessary calls. Calibration helps make this switching signal meaningful, while the cost and effectiveness of System 2 determine when switching is worthwhile. The 0.90 threshold is just an illustration.
+
+System 2’s role here also differs from the flight demo’s text helper: generating "Zurich" fills in an already chosen action, whereas comparing fares helps decide which action to take.
+
+The rtrvr integration demonstrates delegation through an explicit delegate option. Its reported handoffs did not use a fixed probability or confidence threshold, so the rule above illustrates a possible routing mechanism rather than its deployed behavior.[^rtrvr]
+
+Let’s return to the flight search to see what a useful handoff contributes
+
+## 4. How System 2 Can Reduce Uncertainty
+
+The published demo ends when matching search results appear. For illustration, extend the task:
+
+> Among these Zürich–London flights, choose the cheapest option including one 23 kg checked bag.
+
+Assume both flights satisfy the other requirements and the listed charges are complete:
+
+| Flight | Base fare | Baggage information |
+|---|---:|---|
+| A | \$120 | Cabin bag included. One 23 kg checked bag costs \$70 extra. |
+| B | \$155 | One 23 kg checked bag included. |
+
+Suppose the fast model favors A, reporting 0.55 for A and 0.45 for B. So, System 1 has not reliably resolved how the fare descriptions satisfy the checked-bag requirement.
+
+System 2 can work through that ambiguity and produce an explicit reasoning trace::
+
+```text
+The user needs a checked bag; A’s included cabin bag does not meet that requirement.
+
+Flight A: $120 + $70 = $190
+Flight B: $155 +  $0 = $155
+
+Both meet the requirement after including the relevant charges.
+Flight B is cheaper by $35.
+```
+
+System 2 can spend more effort on the decision: reason through the options, revisit earlier instructions or documents, retrieve missing details, and focus on constraints the fast model may have overlooked. Here, that means noticing that a cabin bag does not satisfy the checked-bag requirement and comparing the total fares. This additional work can lead to a better conclusion: “A costs $190 with the required bag; B costs $155.”
+
+![image](https://hackmd.io/_uploads/r17NCHoqfe.png)
+*Figure 2. A hypothetical continuation of the flight search. System 2 interprets the baggage requirement and compares total prices. The calculation supports choosing B; it is not a measured Jev result.*
+
+System 2 can act on this conclusion directly or pass its reasoning back as additional context for Jev to reconsider. This is how additional reasoning can reduce uncertainty: it makes relevant facts and their implications explicit, resolving something the fast prediction left unclear.
+
+But at inference, the system needs to know when to switch. An uncalibrated, overconfident System 1 might report high certainty even when it has missed an important constraint. The router could then execute A without triggering the reasoning that would identify B as cheaper. A reliable uncertainty estimate gives the system a chance to pause and examine the decision.
+
+**Calibration and additional reasoning** therefore play complementary roles: calibration helps signal when a proposal needs scrutiny, and System 2 can use that opportunity to reach a better conclusion.
+
+Now that we understand why calibration matters, let’s use a simple example to see why a standard RL objective might not produce probabilities with this meaning.
+
+
+## 5. Why maximizing expected reward in RL does not guarantee calibration
+
+
+Consider a one-step decision with two available actions, A and B. Assume exactly one is correct for each instance. Given the information available to the model, suppose
+
+$$
+P(A\text{ is correct})=0.60,
+\qquad
+P(B\text{ is correct})=0.40.
+$$
+
+Let $p$ be the probability with which a policy selects A. If a correct action receives reward 1 and an incorrect action receives reward 0, its expected reward is
+
+$$
+J(p)=0.60p+0.40(1-p)=0.40+0.20p.
+$$
+
+This is maximized at $p=1$: always choose A. The resulting selection distribution is $[1,0]$, although the correctness probabilities remain $[0.60,0.40]$.
+
+Always choosing A achieves 60% accuracy. Sampling A with probability 0.60 and B with probability 0.40 would achieve only
+
+$$
+0.60\times0.60+0.40\times0.40=0.52.
+$$
+
+Concentrating the policy on A is therefore appropriate for maximizing reward. The mistake would be to interpret its selection probability as certainty about the outcome:
+
+> **“I always choose A” does not mean “A is always correct.”**
+
+The distinction is between two questions:
+
+| Quantity | Question |
+|---|---|
+| Selection probability $p$ | How often will the policy choose A? |
+| Correctness estimate $q$ | How often will A be correct in the cases being predicted? |
+
+An agent can choose A deterministically, with $p=1$, while reporting $q=0.60$. Calibration does not require sampling from the reported correctness distribution.
+
+Now compare an easy case where A is correct with probability 0.99 and a harder case where it is correct with probability 0.60. A reward-maximizing selection policy can choose A with probability one in both. Its selection probabilities alone do not expose the difference that matters for further scrutiny.
+
+This example does not show that RL cannot support calibrated predictions. It shows that **maximizing expected reward alone does not require action-selection probabilities to be calibrated correctness estimates**. Choosing a good action and predicting its reliability are different objectives.
+
+
+## 6. How to learn the calibrated probabilities
+
+Return to the 60/40 example. Recall that $p$ describes how often the policy selects A, while $q$ estimates the probability that A is correct. We want:
+
+```text
+Behavior:               choose A
+Reported correctness:   q = 0.60
+```
+
+Suppose training provides a label $y$: 1 when A is correct, and 0 otherwise. A simple way to train $q$ is the binary Brier loss:
+
+$$
+\mathcal L(q,y)=(q-y)^2.
+$$
+
+For our 60/40 example, its expected value is
+
+$$
+\mathbb E[\mathcal L]
+=0.6(q-1)^2+0.4q^2
+=(q-0.6)^2+0.24.
+$$
+
+The loss is minimized at $q=0.6$. The two objectives ask for different outputs:
+
+```text
+Maximize action reward → always select A
+Minimize Brier loss    → report 0.60 for A being correct
+```
+
+**Note** : Brier loss is not the only way to learn these probabilities. Log loss, also called binary cross-entropy, gives the same answer in our 60/40 example:
+
+$$
+\mathbb E[\mathcal L_{\log}]
+=-0.6\log q-0.4\log(1-q).
+$$
+
+Setting its derivative to zero gives
+
+$$
+-\frac{0.6}{q}+\frac{0.4}{1-q}=0
+\quad\Longrightarrow\quad q=0.6,
+$$
+
+the unique minimum. We note that Brier loss and log loss are both strictly proper scoring rules and therefore the true probability uniquely minimizes expected loss.[^scoring]
+
+This calculation identifies the ideal prediction. It does not guarantee calibration for a model trained on finite data with limited capacity. The estimates still need evaluation on the kinds of decisions where they will be used.
+
+The extra challenge for an agent is obtaining trustworthy decision-level feedback. A terminal success or failure does not automatically supply the label $y$ for each earlier action. Verifiers, labeled examples, or carefully designed comparisons of alternative actions may provide evidence, but credit assignment remains part of the problem.
+
+
+## 7. Putting It Together: System 1 and System 2
+
+
+![image](https://hackmd.io/_uploads/S1Rw_LO5zl.png)
+
+
+*Figure 3. An illustrative router. Here $q$ is a validated correctness estimate, not TypeSafe’s API `confidence` field. The 0.90 threshold is a teaching example, not a deployed Jev routing rule.*
+
+> Calibrated probabilities help the router decide when to act on System 1’s proposal and when to switch to System 2 for further reasoning. That switch can redirect an entire trajectory which brings us back to the sequential decision problem.
+
+
+## 8. Is Jev Secretly Learning a Q-Function?
+
+So far, we have discussed calibration through a one-step decision. But browser tasks involve a sequence of choices. Selecting a fare affects which baggage options appear next; adding a bag changes the total price; completing the booking without checking that total may violate the user’s budget. A reasonable-looking action now does not guarantee a successful outcome later.
+
+This introduces a harder question: **how do we learn the reliability of an action when success is only judged at the end?**
+
+Let’s study a setting where a verifier provides a single success-or-failure label after the task finishes. The agent still sees page updates and tool results along the way, but receives no intermediate reward telling it how much each action contributed. This is a standard terminal reward setting in RL and not a claim about Jev’s actual training procedure.
+
+### From individual decisions to trajectories
+
+At step $t$, let $s_t$ contain the user’s goal, the current browser observation, and enough interaction history to describe the decision problem. We also include the remaining time budget. Formally, we can use the full observable history as the state; a shorter summary requires assuming it preserves the information needed to predict what happens next.
+
+Let $\mathcal A(s_t)$ be the available actions. A policy $\pi_\theta$ selects an action, and the environment returns the next state:
+
+$$a_t\sim\pi_\theta(\cdot\mid s_t),
+\qquad s_{t+1}\sim P(\cdot\mid s_t,a_t).$$
+
+We hold the browser executor and text helper fixed and include their effects in the transition $P(\cdot\mid s_t,a_t)$. These interactions produce a trajectory
+
+$$
+\tau=(s_0,a_0,s_1,a_1,\ldots,s_{T-1},a_{T-1},s_T),
+$$
+
+with probability
+
+$$
+p_\theta(\tau)
+=\rho(s_0)\prod_{t=0}^{T-1}
+\pi_\theta(a_t\mid s_t)P(s_{t+1}\mid s_t,a_t),
+$$
+
+where $\rho$ is the initial-state distribution. Early termination can be represented by an absorbing state. This notation allows stochastic policies; it does not imply that a deployed Jev integration samples its actions.
+
+Suppose the verifier checks whether the final booking satisfies the requested route, date, baggage allowance, and budget:
+
+$$R(\tau)=\begin{cases}
+1,&\text{if the task succeeds},\\
+0,&\text{otherwise}.
+\end{cases}$$
+
+With no intermediate rewards and no discounting, the objective is
+
+$$J(\theta)
+=\mathbb E_{\tau\sim p_\theta}[R(\tau)]
+=P_\theta(\text{task success}).$$
+
+A failed booking supplies a learning signal, but does not identify which earlier choice caused the failure. This is the credit-assignment challenge.
+
+### The probability we want already has a name - Value Function
+
+Our earlier correctness estimate concerned a single decision. In this sequential setting, we can ask a broader question:
+
+> If I take this action now, how likely is the remaining task to succeed?
+
+We must specify what happens after that action. Let $\mu$ be the **continuation policy**—perhaps System 1 alone, System 2, or the combined system with its switching rule.
+
+Under our reward definition, the action-value function is
+
+$$
+\begin{aligned}
+Q^\mu(s_t,a)
+&=\mathbb E[R(\tau)\mid s_t,\text{ take }a,\text{ then follow }\mu]\\
+&=\boxed{P(\text{task success}\mid s_t,\text{ take }a,\text{ then follow }\mu)}.
+\end{aligned}
+$$
+
+**The expected value of a binary success indicator is exactly its probability of success.** The reliability score we want is therefore a Q-function in this setting.[^rlbook]
+
+For example, $Q^\mu(s_t,A)=0.80$ means that taking action A from this state, then continuing with $\mu$, succeeds with probability 80%. It does not mean that A is locally correct with probability 80%, or that A should be selected 80% of the time.
+
+The continuation matters: a capable System 2 may recover from a choice that the fast policy cannot. Neither value is automatically
+
+$$Q^*(s,a)=\max_\mu Q^\mu(s,a),$$
+
+which assumes the best available continuation. Likewise, discounted rewards or additional costs generally turn Q into a utility estimate rather than a plain success probability.
+
+An exact $Q^\mu$ is calibrated for these outcomes under the same continuation:
+
+$$\mathbb E[R\mid Q^\mu(s,a)=q]=q.$$
+
+But this is a property of the **true conditional probability**. A learned approximation $\widehat Q_\phi$ can be inaccurate or miscalibrated, and calibration alone does not guarantee accurate values for every state and action.
+
+### Could we learn this score from completed tasks?
+
+One direct approach is to try an action and observe several continuations. If we can reset to the same state or use a suitable simulator, we can:
+
+1. Take candidate action $a$ from state $s$.
+2. Continue with a fixed policy $\mu$ until the task ends.
+3. Record the terminal outcome and repeat.
+
+With $K$ sampled episodes, the empirical success rate is
+
+$$\widehat q_K(s,a)
+=\frac{1}{K}\sum_{k=1}^{K}R^{(k)},
+\qquad
+R^{(k)}\in\{0,1\}.
+$$
+
+We can then train a neural network $\widehat Q_\phi(s,a)\in[0,1]$ to predict these rates. This is Monte Carlo action-value estimation with function approximation.[^rlbook] 
+
+
+
+### A Q-value is probability in this setting but not a distribution over actions
+
+Two different actions might both offer a high chance of success:
+
+$$Q^\mu(s,A)=0.90,
+\qquad
+Q^\mu(s,B)=0.85.$$
+
+These values need not sum to one because they describe outcomes under different choices. Both routes through a website might work.
+
+We can still derive a policy or an action-selection rule from learned values, for example
+
+$$a^*=\arg\max_a\widehat Q_\phi(s,a),
+\qquad\text{or}\qquad
+\pi_\beta(a\mid s)
+=\frac{\exp(\widehat Q_\phi(s,a)/\beta)}
+{\sum_b\exp(\widehat Q_\phi(s,b)/\beta)},
+\quad \beta>0.$$
+
+The softmax produces a distribution for selecting actions. Although its probabilities are not the original success estimates, and its temperature controls how concentrated the selection becomes. Either could support action selection in a Jev-like system. The selection probabilities, however, are different from the original success estimates.
+
+For deciding when to switch, the relevant score in our formulation is
+
+$$
+q_{\text{fast}}
+=\widehat Q^{\mu_{\text{fast}}}_\phi(s,a^*),
+$$
+
+the estimated probability of task success if we take the proposed action and continue with the fast policy. A simple router could switch when $q_{\text{fast}}<\tau$, assuming System 2 has been shown to improve these cases enough to justify its cost.
+
+Notice why comparing actions or computing entropy over their selection probabilities is insufficient:
+
+| Q-scores | Interpretation |
+|---|---|
+| $[0.95,0.94]$ | Both actions look reliable. Being unsure which is better is not a strong reason to switch. |
+| $[0.30,0.10]$ | One action has a larger estimated value, but even that action looks unreliable. Further reasoning may help. |
+
+**“I cannot distinguish between two good answers” and “I do not have a reliable answer” are different kinds of uncertainty.** For switching, the second is usually what matters.
+
+This gives a possible foundation for the router in Section 7. It resembles TypeSafe’s broader use of confidence to guide behavior, but our success estimate is distinct from its API `confidence`, which summarizes the shape of the output distribution.[^confidence]
+
+### So, is this what Jev learns?
+
+We cannot conclude that from the public descriptions. Jev’s Choice probabilities form a distribution over options, whereas general action-success values do not. The browser demonstrations also do not establish that Jev was trained from terminal task rewards.
+
+But the connection suggests an interesting hypothesis. If a fast decision model learns to predict eventual success from the current context and a candidate action, under a specified continuation, then it is learning an action-value function. That prediction can support both action selection and decisions about when to seek further reasoning.
+
+**Could some of the capability we want from a calibrated System 1 be learned through value prediction and could that be part of the story behind Jev?**
+
+
+
+
+## Contributors
+
+**[Souradip Chakraborty](https://souradip-chakraborty.github.io/)**  (soura24@mit.edu)
+Massachusetts Institute of Technology (MIT)
+
+**[Amrit Singh Bedi](https://amrit-singh-bedi.github.io/index.html)** (amritbedi@ucf.edu)
+University of Central Florida (UCF)
+
+```bibtex
+@article{chakraborty2026jev,
+  title  = {Understanding Jev: RL, Uncertainty, and Calibration},
+  author = {Chakraborty, Souradip and Bedi, Amrit Singh},
+  year   = {2026},
+  month  = {October},
+  url    = {https://souradip-chakraborty.github.io/blog/jev-rlcd/}
+}
+```
+
+## References
+
+[^primer]: TypeSafe AI. [“AI Primer.”](https://docs.typesafe.ai/introduction/machine-learning-primer) Documentation, accessed September 29, 2026.
+
+[^founder]: Latent Space. [“Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI.”](https://www.latent.space/p/jev) Interview with Diogo Almeida, September 21, 2026. See 22:04–24:47 on synthetic data and 24:59–27:55 on RLCD.
+
+[^jevrepo]: Browser-use. [“jev-ultrafast.”](https://github.com/browser-use/jev-ultrafast) GitHub repository, 2026.
+
+[^performance]: Browser-use. [“Faster on the Real Web.”](https://github.com/browser-use/jev-ultrafast/blob/main/docs/performance.md) *jev-ultrafast* documentation, 2026.
+
+[^rlbook]: Richard S. Sutton and Andrew G. Barto. [*Reinforcement Learning: An Introduction.*](https://mitpress.mit.edu/9780262039246/reinforcement-learning/) Second edition. MIT Press, 2018. See Chapters 3–6 on decision processes, policy improvement, and value learning.
+
+[^entropy]: Ofir Nachum, Mohammad Norouzi, Kelvin Xu, and Dale Schuurmans. [“Bridging the Gap Between Value and Policy Based Reinforcement Learning.”](https://proceedings.neurips.cc/paper/2017/hash/facf9f743b083008a894eee7baa16469-Abstract.html) In *Advances in Neural Information Processing Systems 30*, 2017.
+
+[^calibration]: Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. [“On Calibration of Modern Neural Networks.”](https://proceedings.mlr.press/v70/guo17a.html) In *Proceedings of the 34th International Conference on Machine Learning (ICML)*, vol. 70 of *Proceedings of Machine Learning Research*, pp. 1321–1330, 2017.
+
+[^prediction]: David Silver. [“Model-Free Prediction.”](https://davidstarsilver.wordpress.com/wp-content/uploads/2025/04/lecture-4-model-free-prediction-.pdf) Lecture 4, *Reinforcement Learning*, University College London, 2015.
+
+[^control]: David Silver. [“Model-Free Control.”](https://davidstarsilver.wordpress.com/wp-content/uploads/2025/04/lecture-5-model-free-control-.pdf) Lecture 5, *Reinforcement Learning*, University College London, 2015.
+
+[^scoring]: Tilmann Gneiting and Adrian E. Raftery. [“Strictly Proper Scoring Rules, Prediction, and Estimation.”](https://doi.org/10.1198/016214506000001437) *Journal of the American Statistical Association* 102, no. 477 (2007): 359–378.
+
+[^uncertainty]: Alex Kendall and Yarin Gal. [“What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?”](https://proceedings.neurips.cc/paper/2017/hash/2650d6089a6d640c5e85b2b88265dc2b-Abstract.html) In *Advances in Neural Information Processing Systems 30*, pp. 5574–5584, 2017.
+
+[^confidence]: TypeSafe AI. [“Confidence.”](https://docs.typesafe.ai/confidence) Documentation, accessed September 29, 2026.
+
+
+
+
