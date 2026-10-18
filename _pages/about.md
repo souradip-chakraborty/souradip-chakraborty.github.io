@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Researcher at [MIT CSAIL](https://www.csail.mit.edu/), working with [Prof. Omar Khattab](https://omarkhattab.com/). My current research focuses on developing the foundations of **Pedagogical Reinforcement Learning**  for AI agents—learning paradigms that enable agents to improve through interaction, feedback, and long-horizon experience rather than relying solely on scalar terminal rewards. My broader vision is to build **continually learning AI agents** that can autonomously acquire new capabilities while remaining robust, efficient, and aligned with human objectives.
+I am a Postdoctoral Researcher at [MIT CSAIL](https://www.csail.mit.edu/), working with [Prof. Omar Khattab](https://omarkhattab.com/). My current research focuses on developing the foundations of **Pedagogical Reinforcement Learning**  for AI agents—learning paradigms that enable agents to improve through interaction, feedback, and long-horizon experience rather than relying solely on scalar terminal rewards. My broader vision is to build **continually learning AI agents** that can autonomously acquire new capabilities while remaining robust, efficient, and aligned with human objectives. I was recently selected as a [**2026 Rising Star in Data Science**](https://hai.stanford.edu/research/fellowship-programs/rising-stars-in-data-science), a joint program of UChicago, Stanford, Harvard, and UC San Diego.
 
 I received my Ph.D. in Computer Science from the **University of Maryland, College Park**, where I was fortunate to be advised by [Prof. Furong Huang](https://furong-huang.com/) and [Prof. Dinesh Manocha](https://www.cs.umd.edu/~dm/). During my Ph.D., I had the opportunity to collaborate closely with [Prof. Mengdi Wang](https://mengdiwang.github.io/) (Princeton University), [Prof. Amrit Singh Bedi](https://amritsinghbedi.github.io/) (University of Central Florida), [Dr.Mohammad Ghavamzadeh](https://mohammadghavamzadeh.github.io/) (Qualcomm AI Research) and [Prof. Aldo Pacchiano](https://aldopacchiano.ai/) (Boston University), working on reinforcement learning, AI alignment, optimization, and decision-making under uncertainty.
 
@@ -16,6 +16,7 @@ I have also spent time at **Google Research**, where I worked with [Alekh Agarwa
 
 # Recent News
 
+- **October 2026:** Selected as a [**2026 Rising Star in Data Science**](https://hai.stanford.edu/research/fellowship-programs/rising-stars-in-data-science) by UChicago, Stanford, Harvard, and UC San Diego.
 - **July 2026:** Joined [MIT CSAIL](https://www.csail.mit.edu/) as a Postdoctoral Researcher working on Foresight RL for Agents
 - **May 2026:**  Released our recent work on Pedagogical RL [[Blog](https://mit-oasys.github.io/essays/pedagogical-rl/)], [[Detailed Thread](https://x.com/SOURADIPCHAKR18/status/2055057138070733176)]
 - **May 2026:** Completed my Ph.D. in Computer Science at the University of Maryland, College Park with [Prof. Furong Huang](https://furong-huang.com/) and [Prof. Dinesh Manocha](https://www.cs.umd.edu/~dm/) [[Details](https://www.linkedin.com/posts/souradip-chakraborty_foresightrl-pedagogicalrl-activity-7462971035768811520-Do1v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAApk96EBpPXupX7HHww1bNw5FAwxS6ZznYE)]
